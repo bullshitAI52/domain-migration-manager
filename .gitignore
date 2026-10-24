@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+projects.json
+*.local.json
+.state/
+backups/
+**/journal.json
+*.pem
+*.key
+.DS_Store

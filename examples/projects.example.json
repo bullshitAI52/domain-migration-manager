@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "nginx_dir": "/etc/nginx/conf.d",
+  "cert_dir": "/etc/domain-migration/certs",
+  "acme_bin": "/root/.acme.sh/acme.sh",
+  "acme_home": "/root/.acme.sh",
+  "state_dir": "/var/lib/domain-migration",
+  "projects": [
+    {
+      "id": "pic-tg",
+      "old_domain": "pic-tg.old-example.com",
+      "new_domain": "pic-tg.new-example.com",
+      "zone_id": "00000000000000000000000000000000",
+      "ipv4": "192.0.2.10",
+      "proxied": true,
+      "https_port": 2087,
+      "upstream_port": 8770,
+      "service": "pic-tg.service",
+      "env_file": "/etc/pic-tg/bot.env",
+      "url_key": "TG_PUBLIC_URL",
+      "health_text": "高清图片裁剪"
+    }
+  ]
+}
