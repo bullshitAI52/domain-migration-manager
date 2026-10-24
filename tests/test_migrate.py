@@ -20,9 +20,10 @@ class SafetyTests(unittest.TestCase):
         self.root = Path(self.tmp.name).resolve()
         self.config = json.loads((ROOT/'examples/projects.example.json').read_text())
         self.p = self.config['projects'][0]
-        for key in ('nginx_dir','cert_dir','state_dir'):
+        for key in ('nginx_dir','cert_dir','state_dir','acme_home'):
             folder = self.root/key; folder.mkdir(mode=0o700)
             self.config[key] = str(folder)
+        self.config['acme_bin'] = str(Path(self.config['acme_home'])/'acme.sh')
         self.p['env_file'] = str(self.root/'bot.env')
         self.env = Path(self.p['env_file'])
         self.original = f'TG_BOT_TOKEN=secret-do-not-print\nTG_PUBLIC_URL={m.url(self.p,False)}\nOTHER=value\n'.encode()
