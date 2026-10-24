@@ -2,6 +2,8 @@
 
 [English](README.en.md) · [配置示例](examples/projects.example.json) · [安全与边界](SECURITY.md)
 
+**第一次使用？先看 [手把手使用说明](docs/USAGE.zh-CN.md)**：从哪里运行、清单怎么填、如何判断成功，以及出错怎么恢复。
+
 **换域名不用到处找文件：一张项目清单，先预览，再执行，失败可回滚。**
 
 适合已经运行在 Linux VPS 上的 **Cloudflare + Nginx + systemd** 小项目，例如 Telegram 图片机器人。无需安装 Python 第三方依赖。不是域名注册工具，也不是把所有服务器“无脑一键搬家”。

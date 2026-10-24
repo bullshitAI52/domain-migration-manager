@@ -2,6 +2,8 @@
 
 [中文](README.md) · [Example inventory](examples/projects.example.json) · [Security](SECURITY.md)
 
+**Start here: [Step-by-step usage guide](docs/USAGE.en.md)** — setup, configuration, preview, migration, verification and recovery.
+
 **One inventory, an offline preview, an explicit apply command, and recoverable local configuration changes.**
 
 A Python standard-library CLI for existing **Cloudflare + Nginx + systemd** applications on a Linux VPS. Supports sequential project batches. It does not migrate your entire server or replace arbitrary strings across your filesystem.
